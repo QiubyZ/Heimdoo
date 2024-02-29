@@ -1,0 +1,11 @@
+name: TestReusable
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: [ "main" ]
+        
+jobs:
+    call-workflow-passing-data:
+          uses: QiubyZ/ReleaseWorkflow/.github/workflows/main.yml@main
